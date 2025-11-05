@@ -31,6 +31,10 @@ app.get('/pedidos', (request, response) => {
     return response.json(clientes);
 })
 
+app.get('/health', (request, response) => {
+    return response.send('OK');
+})
+
 app.post('/pedidos', (request, response) => {
     try {
         const { pedido, nome } = request.body
