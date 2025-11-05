@@ -32,7 +32,7 @@ app.get('/pedidos', (request, response) => {
 })
 
 app.get('/health', (request, response) => {
-    return response.send('OK');
+    return response.json({ status: 'ok' });
 })
 
 app.post('/pedidos', (request, response) => {
